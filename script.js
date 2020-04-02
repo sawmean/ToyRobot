@@ -22,6 +22,16 @@ var toyrobot = {
     return this.x + " " + this.y;
   }
 };
+function moveleft()
+{
+  document.getElementById('image').style.position="absolute";
+  document.getElementById('image').style.left="0";
+}
+function moveback()
+{
+  document.getElementById('image').style.position="absolute";
+}
+
 
 //console.log(toyrobot.report());
 //toyrobot.move(7,8);
