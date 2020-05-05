@@ -8,7 +8,7 @@ function CodeFunction() {
   $('#results').val(result) //grabbing the variable by id and putting out the user results into the page.
 
   $("#section").append('<div>' + result + '</div>')//getting the results and prepending/appending the value into the page.
-  //$(".grid-item")[24].append(`<img src="baymax.jpg" />`
+
 }
 var toyrobot = {
   x: 0,
@@ -16,16 +16,22 @@ var toyrobot = {
   move : function(x,y) {
     this.x += x;
     this.y += y;
-    onclick = alert ("Hello Users, I just moved to your locations");
+    alert ("Hello Users, I just moved to your locations");
   },
-  report: function(){
+  report:function(){
     return this.x + " " + this.y;
   }
 };
-document.querySelector('.btn').addEventListener('click', function () {
-var baymaxDOM = document.querySelector('.baymax')
-baymaxDOM.style.display = 'block';
-baymaxDOM.src = 'baymax' + baymax + '.jpg';
+function moveleft()
+{
+  document.getElementById('image').style.position="absolute";
+  document.getElementById('image').style.left="0";
+}
+function moveback()
+{
+  document.getElementById('image').style.position="absolute";
+}
+
 
 //console.log(toyrobot.report());
 //toyrobot.move(7,8);
